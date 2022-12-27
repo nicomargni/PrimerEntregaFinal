@@ -1,4 +1,4 @@
-# app-clase-7
+# primer-entrega
 
 ## Project setup
 ```

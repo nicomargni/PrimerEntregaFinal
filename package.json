@@ -1,5 +1,5 @@
 {
-  "name": "app-clase-7",
+  "name": "primer-entrega",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "core-js": "^3.8.3",
-    "jquery": "^3.6.2",
+    "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
     "vue": "^2.6.14"
   },
