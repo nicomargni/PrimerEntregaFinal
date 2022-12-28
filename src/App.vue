@@ -5,18 +5,9 @@
     <login-prueba />
     <button @click="registroValor()">Not a member? Register</button>
     <registro-prueba v-if="registro" />
-
-    <div class="carro">
-      <h2>Carrito</h2>
-      <prod-carrito
-        v-for="(elemento, index) of carrito"
-        :key="index"
-        :titulo="elemento.titulo"
-        :precio="elemento.precio"
-      />
-      <h3>Total:$2400</h3>
-    </div>
-
+    <h2 style="margin-top:45px">Carrito</h2>
+    <prod-carrito class="carro"/>
+    <h2>Lista de productos</h2>
     <div class="tarjeta">
       <prod-lista
         class="tarjetaHijo"
@@ -64,6 +55,7 @@ export default {
       mostrarInfo: false,
       productos: [
         {
+          id:1,
           titulo: "GTA V",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
@@ -71,6 +63,7 @@ export default {
           stock: true,
         },
         {
+          id:2,
           titulo: "Batman arkham city",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
@@ -78,6 +71,7 @@ export default {
           stock: true,
         },
         {
+          id:3,
           titulo: "Simpsons The Game",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
@@ -85,6 +79,7 @@ export default {
           stock: true,
         },
         {
+          id:4,
           titulo: "GTA IV",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
@@ -92,6 +87,7 @@ export default {
           stock: true,
         },
         {
+          id:5,
           titulo: "God of war 4",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
@@ -99,6 +95,7 @@ export default {
           stock: false,
         },
         {
+          id:6,
           titulo: "Dying light 2",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
@@ -106,6 +103,7 @@ export default {
           stock: true,
         },
         {
+          id:7,
           titulo: "Deus ex",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
@@ -113,21 +111,12 @@ export default {
           stock: true,
         },
         {
+          id:8,
           titulo: "Fallout new vegas",
           imagen:
             "https://sm.ign.com/ign_es/tag/v/videojuego/videojuegos_4ze8.jpg",
           costo: 1200,
           stock: false,
-        },
-      ],
-      carrito: [
-        {
-          titulo: "Deus ex",
-          precio: 1200,
-        },
-        {
-          titulo: "Dying Light 2",
-          precio: 1200,
         },
       ],
       info: [
@@ -206,7 +195,8 @@ export default {
 }
 .carro {
   border: solid 1px;
-  margin-top: 50px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
 }
 </style>
